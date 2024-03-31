@@ -31,7 +31,7 @@ jobs:
     - uses: romeovs/lcov-reporter-action@v0.2.19
       with:
         lcov-file: ./coverage/lcov.info
-        github-token: ${{ secrets.GITHUB_TOKEN}}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
     - name: Cypress run
       uses: cypress-io/github-action@v6
       with:
